@@ -1,0 +1,1 @@
+"c:\Program Files\TortoiseSVN\bin\SubWCRev.exe" .\ .\version_template.py .\version.py

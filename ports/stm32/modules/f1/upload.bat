@@ -1,0 +1,1 @@
+rclone copy --verbose --transfers 4 --checkers 8 --contimeout 60s --timeout 300s --retries 3 --low-level-retries 10 --exclude version_template.py --exclude get_code_lines.bat --exclude get_code_lines.py --exclude update_build.bat --stats 1s D:\cv1\TC\totalcmd_v8.5\TOOL_cv\PYB\1_modules\f1 pyb_f1:cccc/microPython/project/micropython/ports/stm32/modules/f1

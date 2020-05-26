@@ -304,9 +304,7 @@ STATIC uint update_reset_mode(uint reset_mode) {
             }
             mp_hal_delay_ms(20);
             if (i % 30 == 29) {
-                if (++reset_mode > 3) {
-                    reset_mode = 1;
-                }
+                reset_mode = 3;
                 led_state(2, reset_mode & 1);
                 led_state(3, reset_mode & 2);
                 led_state(4, reset_mode & 4);

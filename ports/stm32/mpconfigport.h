@@ -67,7 +67,7 @@
 #define MICROPY_ENABLE_FINALISER    (1)
 #define MICROPY_STACK_CHECK         (1)
 #define MICROPY_ENABLE_EMERGENCY_EXCEPTION_BUF (1)
-#define MICROPY_EMERGENCY_EXCEPTION_BUF_SIZE (0)
+#define MICROPY_EMERGENCY_EXCEPTION_BUF_SIZE (100)
 #define MICROPY_KBD_EXCEPTION       (1)
 #define MICROPY_HELPER_REPL         (1)
 #define MICROPY_REPL_EMACS_KEYS     (1)
@@ -124,11 +124,11 @@
 #define MICROPY_PY_SYS_STDFILES     (1)
 #define MICROPY_PY_SYS_STDIO_BUFFER (1)
 #ifndef MICROPY_PY_SYS_PLATFORM     // let boards override it if they want
-#define MICROPY_PY_SYS_PLATFORM     "pyboard"
+#define MICROPY_PY_SYS_PLATFORM     "pyboard_ccrobot-online.com"
 #endif
 #define MICROPY_PY_UERRNO           (1)
 #ifndef MICROPY_PY_THREAD
-#define MICROPY_PY_THREAD           (0)
+#define MICROPY_PY_THREAD           (1)
 #endif
 
 // extended modules
